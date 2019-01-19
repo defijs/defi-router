@@ -1,6 +1,6 @@
 {
   "name": "defi-router",
-  "version": "0.0.0-auto",
+  "version": "0.0.0",
   "description": "A router for defi.js",
   "main": "index",
   "scripts": {
