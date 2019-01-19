@@ -17,7 +17,9 @@ function handlePopStateChange(router) {
 
 class Router {
     parts = [];
+
     path = '/';
+
     hashPath = '!#/';
 
     constructor(type) {

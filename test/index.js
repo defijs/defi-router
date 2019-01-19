@@ -9,6 +9,7 @@ global.window = new JSDOM('<!doctype html><html><body></body></html>', {
 }).window;
 
 jasmine.loadConfig({
+    random: false,
     spec_dir: 'test/spec',
     spec_files: [
         '**/*_spec.js'

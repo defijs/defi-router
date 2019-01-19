@@ -1,5 +1,5 @@
 import Router from '../../src/router';
-import initRouter from '../../src/';
+import initRouter from '../../src';
 
 const {
     document, location, history, Event

@@ -1,8 +1,8 @@
-import Router from './router';
+const Router = require('./router');
 
-function initRouter(obj, route, type) {
+function router(obj, route, type) {
     Router[type || 'hash'].subscribe(obj, route);
     return obj;
 }
 
-module.exports = initRouter;
+module.exports = router;
