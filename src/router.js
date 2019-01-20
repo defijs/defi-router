@@ -1,7 +1,6 @@
-const calc = require('defi/calc');
-const on = require('defi/on');
-const trigger = require('defi/trigger');
-const set = require('defi/set');
+const {
+    calc, on, trigger, set
+} = require('defi');
 
 function handleHashChange(router) {
     set(router, 'hashPath', window.location.hash, {
