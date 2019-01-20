@@ -43,7 +43,7 @@ defiRouter(object, '/a/b/c/', 'history');
 --------
 
 
-How does "traditional" routing works? A developer defines a rule (route) and defines a function which will be called when current path fits given rule.
+How does a "traditional" routing works? A developer defines a rule (route) and defines a function which will be called when current path fits the given rule.
 
 ```js
 route("books/:id", id => {
@@ -51,7 +51,7 @@ route("books/:id", id => {
 });
 ```
 
-The principle of **defi-router** is different. You define which part of URL (both [hash](https://developer.mozilla.org/ru/docs/Web/API/Window/location), and [HTML5 History](https://developer.mozilla.org/ru/docs/Web/API/History_API) are supported) need to be synchronized with given property.
+The principle of **defi-router** is different. You define which part of URL (both [hash](https://developer.mozilla.org/ru/docs/Web/API/Window/location), and [HTML5 History](https://developer.mozilla.org/ru/docs/Web/API/History_API) are supported) need to be synchronized with a given property.
 
 Let's say you need to synchronize ``"x"`` with the first part of ``location.hash`` and ``"y"`` with the second.
 
@@ -94,7 +94,7 @@ defiRouter(object, '/x/*/y');
 
 If the hash looks like ``#!/foo/bar/baz/``, then ``object.x = "foo"`` and ``object.y = "baz"``.
 
-This feature is useful in cases when classes control different parts of the path.
+This feature is useful in cases when two or more modules control different parts of the path.
 
 
 **script1.js**
@@ -131,7 +131,7 @@ The idea is to get actual state of URL. It could be weird to get ``"z"`` with va
 
 ## HTML5 History API
 
-The plugin supports  HTML5 History as well. To initialize it you need to pass optional argument ``type`` with ``"history"`` value to the ``initRoute`` function (by default ``type`` is ``"hash"``).
+The plugin supports  HTML5 History as well. To initialize it you need to pass an optional argument ``type`` with ``"history"`` value to the ``defiRouter`` function (by default ``type`` is ``"hash"``).
 
 ```js
 defiRouter(object, 'x/y/z/', 'history');
