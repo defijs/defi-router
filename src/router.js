@@ -1,7 +1,7 @@
-import calc from 'defi/calc';
-import on from 'defi/on';
-import trigger from 'defi/trigger';
-import set from 'defi/set';
+const calc = require('defi/calc');
+const on = require('defi/on');
+const trigger = require('defi/trigger');
+const set = require('defi/set');
 
 function handleHashChange(router) {
     set(router, 'hashPath', window.location.hash, {
