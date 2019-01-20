@@ -15,7 +15,7 @@ describe('Hash routing', () => {
         setTimeout(() => {
             expect(document.location.hash).toEqual('#!/foo/');
             done();
-        }, 50);
+        }, 100);
     });
 
     it('changes properties when URL (hash) is changed', (done) => {
@@ -27,7 +27,7 @@ describe('Hash routing', () => {
             expect(obj.c).toEqual('qux');
             expect(obj.d).toEqual(null);
             done();
-        }, 50);
+        }, 100);
     });
 
     it('changes URL (hash) when property is changed', (done) => {
@@ -35,6 +35,6 @@ describe('Hash routing', () => {
         setTimeout(() => {
             expect(document.location.hash).toEqual('#!/bar/lol/qux/');
             done();
-        }, 50);
+        }, 100);
     });
 });

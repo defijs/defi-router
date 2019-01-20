@@ -19,7 +19,7 @@ describe('HTML5 History routing', () => {
         setTimeout(() => {
             expect(document.location.pathname).toEqual('/foo/');
             done();
-        }, 50);
+        }, 100);
     });
 
     it('changes properties when URL (pathname) is changed', (done) => {
@@ -31,7 +31,7 @@ describe('HTML5 History routing', () => {
             expect(obj.c).toEqual('qux');
             expect(obj.d).toEqual(null);
             done();
-        }, 50);
+        }, 100);
     });
 
     it('changes URL (pathname) when property is changed', (done) => {
@@ -39,6 +39,6 @@ describe('HTML5 History routing', () => {
         setTimeout(() => {
             expect(document.location.pathname).toEqual('/bar/lol/qux/');
             done();
-        }, 50);
+        }, 100);
     });
 });
