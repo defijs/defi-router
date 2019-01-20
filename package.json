@@ -7,7 +7,7 @@
     "test": "npm run unit && npm run lint",
     "unit": "babel-node node_modules/.bin/babel-istanbul cover test/index.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "upgrade": "ncu --upgradeAll && npm install",
-    "lint": "eslint ./test ./src",
+    "lint": "eslint ./test ./src webpack.config.js",
     "compile-npm": "babel src -d .",
     "bundle": "webpack --mode production",
     "release-npm": "npm run compile-npm && npm publish",
