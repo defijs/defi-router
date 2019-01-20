@@ -15,8 +15,8 @@
     "release": "npm run release-bundle && npm run release-npm",
     "commit": "git-cz",
     "reinstall": "rm -rf node_modules package-lock.json && npm i",
-    "patch": "npm version patch && npm run release && git push --tags",
-    "minor": "npm version minor && npm run release && git push --tags"
+    "patch": "npm version patch && npm run release && git push && git push --tags",
+    "minor": "npm version minor && npm run release && git push && git push --tags"
   },
   "config": {
     "deployToGit": {
