@@ -17,7 +17,7 @@ module.exports = {
         ]
     },
     externals: {
-        fabric: {
+        defi: {
             commonjs: 'defi',
             commonjs2: 'defi',
             amd: 'defi',
