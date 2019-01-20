@@ -4,7 +4,7 @@ A router for defi.js
 [![Coverage Status](https://coveralls.io/repos/github/defijs/defi-router/badge.svg?branch=master)](https://coveralls.io/github/defijs/defi-router?branch=master) [![Build Status](https://travis-ci.org/defijs/defi-router.svg?branch=master)](https://travis-ci.org/defijs/defi-router) [![npm version](https://badge.fury.io/js/defi-router.svg)](https://badge.fury.io/js/defi-router)
 
 
-[Demo](https://defijs.github.io/defi-router/demo.html#!/foo/bar/baz/)
+[Demo](https://defijs.github.io/defi-router/#!/foo/bar/baz/)
 
 Installing:
 ```
