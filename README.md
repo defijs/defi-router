@@ -1,3 +1,5 @@
+The repository is no longer updated. Defi is turned into a monorepo: https://github.com/finom/defi
+
 A router for defi.js
 ============
 
