@@ -89,7 +89,7 @@
     "jsdom": "^13.1.0",
     "npm-check-updates": "^2.15.0",
     "rimraf": "^2.6.3",
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^17.2.3",
     "validate-commit-msg": "^2.14.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
